@@ -2,6 +2,7 @@ package net.omegasleepy.balkan;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.omegasleepy.balkan.block.ModBlocks;
 import net.omegasleepy.balkan.item.ModItems;
 import org.slf4j.Logger;
 
@@ -38,6 +39,7 @@ public class TutorialMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -57,6 +59,9 @@ public class TutorialMod {
             event.accept(ModItems.PIRIUM);
             event.accept(ModItems.SUNIUM);
             event.accept(ModItems.TRENIUM);
+        }
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept((ModBlocks.WHITE_PLANS));
         }
     }
 
