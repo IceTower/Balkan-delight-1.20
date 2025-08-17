@@ -1,5 +1,8 @@
 package net.omegasleepy.balkan;
 
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
+import net.omegasleepy.balkan.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -20,7 +23,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TutorialMod.MOD_ID)
 public class TutorialMod {
-    public static final String MOD_ID = "balkandelight";
+    public static final String MOD_ID = "balkan";
     public static final Logger LOGGER = LogUtils.getLogger();
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -34,6 +37,7 @@ public class TutorialMod {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -47,7 +51,13 @@ public class TutorialMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.BUBBLIUM);
+            event.accept(ModItems.LOVIUM);
+            event.accept(ModItems.PIRIUM);
+            event.accept(ModItems.SUNIUM);
+            event.accept(ModItems.TRENIUM);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
