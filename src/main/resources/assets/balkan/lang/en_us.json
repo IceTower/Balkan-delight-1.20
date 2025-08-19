@@ -5,5 +5,8 @@
   "item.balkan.sunium": "Sunium Gem",
   "item.balkan.trenium": "Trenium Gem",
   "block.balkan.white_planks": "White Planks",
-  "block.balkan.cyan_planks": "Cyan Planks"
+  "block.balkan.cyan_planks": "Cyan Planks",
+  "creativetab.balkan.funky_blocks": "Balkan Blocks",
+  "creativetab.balkan.funky_items": "Balkan Items"
+
 }
