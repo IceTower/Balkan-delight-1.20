@@ -40,11 +40,8 @@ public class TutorialMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModCreativeTabs.register(modEventBus);
-
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        // Register the item to a creative tab
-        modEventBus.addListener(this::addCreative);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
@@ -52,21 +49,6 @@ public class TutorialMod {
 
     private void commonSetup(FMLCommonSetupEvent event) {
 
-    }
-
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BUBBLIUM);
-            event.accept(ModItems.LOVIUM);
-            event.accept(ModItems.PIRIUM);
-            event.accept(ModItems.SUNIUM);
-            event.accept(ModItems.TRENIUM);
-        }
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept((ModBlocks.WHITE_PLANS));
-            event.accept(ModBlocks.CYAN_PLANKS);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

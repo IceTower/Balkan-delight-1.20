@@ -35,6 +35,8 @@ public class ModCreativeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModBlocks.WHITE_PLANS);
                         output.accept(ModBlocks.CYAN_PLANKS);
+                        output.accept(ModBlocks.BUBBLIUM_BLOCK);
+                        output.accept(ModBlocks.BUBBLIUM_ORE);
                     }).build());
 
 

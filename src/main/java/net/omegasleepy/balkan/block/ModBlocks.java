@@ -27,6 +27,15 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2,4),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.SCULK_VEIN)));
 
+    public static final DeferredBlock<Block> BUBBLIUM_ORE = registerBlock("bubblium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().friction(1f).sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> BUBBLIUM_BLOCK = registerBlock("bubblium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(2f).requiresCorrectToolForDrops().friction(1.001f).sound(SoundType.STONE)));
+
+
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
