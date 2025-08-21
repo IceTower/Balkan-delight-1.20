@@ -26,6 +26,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.LOVIUM);
                         output.accept(ModItems.SUNIUM);
                         output.accept(ModItems.TRENIUM);
+                        output.accept(ModItems.RAW_BUBBLIUM);
                     }).build());
 
     public static final Supplier<CreativeModeTab> BALKAN_BLOCKS = CREATIVE_MODE_TAB.register("funky_blocks",
@@ -37,6 +38,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.CYAN_PLANKS);
                         output.accept(ModBlocks.BUBBLIUM_BLOCK);
                         output.accept(ModBlocks.BUBBLIUM_ORE);
+                        output.accept(ModBlocks.BUBBLIUM_DEEPSLATE_ORE);
                     }).build());
 
 

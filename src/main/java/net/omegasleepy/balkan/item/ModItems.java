@@ -11,6 +11,8 @@ public class ModItems {
 
     public static final DeferredItem<Item> BUBBLIUM = ITEMS.register("bubblium",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> RAW_BUBBLIUM = ITEMS.register("raw_bubblium",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> LOVIUM = ITEMS.register("lovium",
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> PIRIUM = ITEMS.register("pirium",

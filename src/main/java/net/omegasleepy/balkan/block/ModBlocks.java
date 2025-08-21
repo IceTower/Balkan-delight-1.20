@@ -28,8 +28,12 @@ public class ModBlocks {
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.SCULK_VEIN)));
 
     public static final DeferredBlock<Block> BUBBLIUM_ORE = registerBlock("bubblium_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops().friction(1f).sound(SoundType.STONE)));
+            () -> new DropExperienceBlock(UniformInt.of(2,4),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().friction(1f).sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> BUBBLIUM_DEEPSLATE_ORE = registerBlock("bubblium_deepslate_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3,6),
+                    BlockBehaviour.Properties.of().strength(4f).requiresCorrectToolForDrops().friction(1f).sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> BUBBLIUM_BLOCK = registerBlock("bubblium_block",
             () -> new Block(BlockBehaviour.Properties.of()
