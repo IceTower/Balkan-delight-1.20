@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.omegasleepy.bubl.TutorialMod;
+import net.omegasleepy.bubl.block.custom.MagicBlock;
 import net.omegasleepy.bubl.item.ModItems;
 
 import java.util.function.Supplier;
@@ -29,9 +30,10 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> BUBBLIUM_BLOCK = registerBlock("bubblium_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(2f).requiresCorrectToolForDrops().friction(1.001f).sound(SoundType.STONE)));
+                    .strength(2f).requiresCorrectToolForDrops().friction(1.001f).strength(2f).sound(SoundType.STONE)));
 
-
+    public static final DeferredBlock<Block> BUBBLIUM_BRICKS = registerBlock("bubblium_bricks",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.TUFF_BRICKS)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

@@ -1,8 +1,9 @@
 {
   "replace": false,
   "values": [
-    "balkan:bubblium_block",
-    "balkan:bubblium_ore",
-    "balkan:bubblium_deepslate_ore"
+    "bubl:bubblium_block",
+    "bubl:bubblium_ore",
+    "bubl:bubblium_deepslate_ore",
+    "bubl:bubblium_bricks"
   ]
 }
