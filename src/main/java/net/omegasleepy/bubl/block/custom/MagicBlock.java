@@ -42,8 +42,9 @@ public class MagicBlock extends Block {
                 itemEntity.setItem(new ItemStack(ModBlocks.BUBBLIUM_BLOCK,itemEntity.getItem().getCount()));
             }
         }
+        if (entity instanceof Player) {
 
-
+        }
 
         super.stepOn(level, pos, state, entity);
     }
