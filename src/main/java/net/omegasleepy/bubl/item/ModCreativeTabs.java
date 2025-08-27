@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.omegasleepy.bubl.TutorialMod;
 import net.omegasleepy.bubl.block.ModBlocks;
+import org.apache.http.conn.routing.RouteTracker;
 
 import java.util.function.Supplier;
 
@@ -23,6 +24,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.BUBBLIUM);
                         output.accept(ModItems.RAW_BUBBLIUM);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModItems.PULL);
+                        output.accept(ModItems.LAUNCH);
                     }).build());
 
     public static final Supplier<CreativeModeTab> BUBL_BLOCKS = CREATIVE_MODE_TAB.register("funky_blocks",
