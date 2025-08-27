@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "bubl:raw_bubblium"
+  },
+  "result": {
+    "id": "bubl:bubblium"
+  }
+}
