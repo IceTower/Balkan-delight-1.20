@@ -22,6 +22,7 @@ public class ModCreativeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.BUBBLIUM);
                         output.accept(ModItems.RAW_BUBBLIUM);
+                        output.accept(ModItems.CHISEL);
                     }).build());
 
     public static final Supplier<CreativeModeTab> BUBL_BLOCKS = CREATIVE_MODE_TAB.register("funky_blocks",
