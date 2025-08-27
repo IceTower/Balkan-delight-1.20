@@ -26,6 +26,7 @@ public class ModCreativeTabs {
                         output.accept(ModItems.CHISEL);
                         output.accept(ModItems.PULL);
                         output.accept(ModItems.LAUNCH);
+                        output.accept(ModItems.HEAL);
                     }).build());
 
     public static final Supplier<CreativeModeTab> BUBL_BLOCKS = CREATIVE_MODE_TAB.register("funky_blocks",
