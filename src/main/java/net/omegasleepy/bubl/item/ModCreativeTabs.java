@@ -33,6 +33,7 @@ public class ModCreativeTabs {
                         output.accept(ModBlocks.BUBBLIUM_BLOCK);
                         output.accept(ModBlocks.BUBBLIUM_ORE);
                         output.accept(ModBlocks.BUBBLIUM_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.BUBBLIUM_BRICKS);
                     }).build());
 
 
