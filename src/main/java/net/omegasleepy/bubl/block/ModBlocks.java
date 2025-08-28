@@ -33,7 +33,10 @@ public class ModBlocks {
                     .strength(2f).requiresCorrectToolForDrops().friction(1.001f).strength(2f).sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> BUBBLIUM_BRICKS = registerBlock("bubblium_bricks",
-            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.TUFF_BRICKS)));
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.TUFF_BRICKS).noLootTable(),1.5,1.5));
+
+    public static final DeferredBlock<Block> SMALL_LAUNCH = registerBlock("small_launch",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).sound(SoundType.TUFF_BRICKS),0.5,0.4));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {

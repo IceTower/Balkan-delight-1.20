@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bubblium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bubl:bubblium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:bubblium_from_blasting_bubblium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bubblium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:bubblium_from_blasting_bubblium_ore"
+    ]
+  }
+}

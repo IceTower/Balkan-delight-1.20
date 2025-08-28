@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "bubblium",
+  "ingredient": {
+    "item": "bubl:bubblium_deepslate_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "bubl:bubblium"
+  }
+}

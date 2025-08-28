@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "bubblium",
+  "ingredient": {
+    "item": "bubl:raw_bubblium"
+  },
+  "result": {
+    "count": 1,
+    "id": "bubl:bubblium"
+  }
+}

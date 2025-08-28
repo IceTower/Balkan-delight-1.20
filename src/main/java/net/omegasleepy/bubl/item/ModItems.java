@@ -1,5 +1,6 @@
 package net.omegasleepy.bubl.item;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 import net.neoforged.bus.api.IEventBus;
@@ -23,6 +24,16 @@ public class ModItems {
             () -> new SytheItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
     public static final DeferredItem<Item> HEAL = ITEMS.register("heal",
             () -> new MagicItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+    public static final DeferredItem<Item> DOUBLEJ = ITEMS.register("doublej",
+            () -> new DoubleJumpItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+    public static final DeferredItem<Item> HUNGER = ITEMS.register("hunger",
+            () -> new HungerItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
+    public static final DeferredItem<Item> BUTTER = ITEMS.register("butter",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BUTTER)));
+    public static final DeferredItem<Item> STAR_OF_FLAMES = ITEMS.register("star_of_flames",
+            () -> new FuelItem(new Item.Properties(),8000));
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

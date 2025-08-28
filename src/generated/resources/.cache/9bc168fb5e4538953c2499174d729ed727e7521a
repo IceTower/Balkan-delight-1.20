@@ -1,0 +1,16 @@
+// 1.21.1	2025-08-28T17:39:55.4374612	Block States: bubl
+702e5c6663e629baf1b05ec39463a00aa69c6fc2 assets/bubl/blockstates/bubblium_block.json
+aaf1f477c3080419ffd6e7a2b24eea9b63cf3d3e assets/bubl/blockstates/bubblium_bricks.json
+55bf9628b1876d5d4f61ad6c54c9109303785de7 assets/bubl/blockstates/bubblium_deepslate_ore.json
+7ddff3cee389772e9a74cab8168541056fee9f40 assets/bubl/blockstates/bubblium_ore.json
+4526666bfa5ce843c5b4d5bd485f95f92540b6fc assets/bubl/blockstates/small_launch.json
+94912471d390581d25318440ba7f1d3f72798f17 assets/bubl/models/block/bubblium_block.json
+f992abe26dc47b2357a026756fbc0e2f75ac4a25 assets/bubl/models/block/bubblium_bricks.json
+476172cda4cfb4efe7573ed05079f0770c4f2e8c assets/bubl/models/block/bubblium_deepslate_ore.json
+8c44220c1629ae6a3c2a348e48cfbd95168c50f5 assets/bubl/models/block/bubblium_ore.json
+6fc6a87ab79eee20364cf2f8cbb1a068f3fd724c assets/bubl/models/block/small_launch.json
+f0f0d142fa05195fad4d57480cf09120fb022c6d assets/bubl/models/item/bubblium_block.json
+461cae384d1eb9ea51f5515ce1c50075965e54cb assets/bubl/models/item/bubblium_bricks.json
+43754c812be774c2838223ece63fc2a666e1b99d assets/bubl/models/item/bubblium_deepslate_ore.json
+39fdb2e1a795e1a5ae46721a245b4a647aca76c4 assets/bubl/models/item/bubblium_ore.json
+da0098cc096dd9e27e0d14f2f3a09858d7646ecc assets/bubl/models/item/small_launch.json

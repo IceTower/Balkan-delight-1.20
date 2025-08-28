@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bubblium": {
+      "conditions": {
+        "items": [
+          {
+            "items": "bubl:bubblium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bubl:bubblium_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_bubblium"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bubl:bubblium_block"
+    ]
+  }
+}

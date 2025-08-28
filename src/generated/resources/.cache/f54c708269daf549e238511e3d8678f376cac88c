@@ -1,0 +1,4 @@
+// 1.21.1	2025-08-28T18:30:54.8598729	Tags for minecraft:block mod id bubl
+c9157acd45b017637d26d38e3bd11a44117acd50 data/minecraft/tags/block/mineable/pickaxe.json
+5a2d835113352be41cfe584590ac43a610bf0a71 data/minecraft/tags/block/needs_diamond_tool.json
+28a4e785a09f039e2fd38ae9095eb07efcbb518f data/minecraft/tags/block/needs_iron_tool.json

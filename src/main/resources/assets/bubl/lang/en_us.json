@@ -5,11 +5,18 @@
   "item.bubl.pull": "Pull test",
   "item.bubl.launch": "Dash",
   "item.bubl.heal": "Heal",
+  "item.bubl.doublej": "Double Jump",
+  "item.bubl.butter": "Butter",
+  "item.bubl.hunger": "Hunger",
+  "item.bubl.star_of_flames": "Star of Flames",
 
   "block.bubl.bubblium_ore": "Bubblium Ore",
   "block.bubl.bubblium_deepslate_ore": "Deepslate Bubblium Ore",
   "block.bubl.bubblium_block": "Block of Bubblium",
   "block.bubl.bubblium_bricks": "Bubblium Bricks",
+
+  "tooltip.bubl.sythe.tooltip": "This is a §9dash§r",
+  "tooltip.bubl.sythe.nottip": "Press §еAlt§r for more information",
 
   "creativetab.bubl.funky_blocks": "Bubblium Blocks",
   "creativetab.bubl.funky_items": "Bubblium Items"
